@@ -34,3 +34,20 @@ Not deployed yet. Add the public base URL after deployment. H2 data resets on re
 
 ## Known limitations
 This is a starter implementation and has not been compiled or integration-tested in this environment. Concurrent bookings require locking for production. The sample rental data uses placeholder car models and customers. No Swagger/OpenAPI or demo video is included yet.
+
+
+## Live Deployment
+
+The Car Rental System backend is deployed on Render.
+
+**Base URL:** https://carrentalsystem-98ck.onrender.com
+
+### Live API Endpoints
+
+- Cars: https://carrentalsystem-98ck.onrender.com/api/cars
+- Customers: https://carrentalsystem-98ck.onrender.com/api/customers
+- Rentals: https://carrentalsystem-98ck.onrender.com/api/rentals
+
+### Swagger Documentation
+
+https://carrentalsystem-98ck.onrender.com/swagger-ui/index.html

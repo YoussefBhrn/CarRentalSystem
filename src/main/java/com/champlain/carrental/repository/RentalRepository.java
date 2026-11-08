@@ -1,0 +1,3 @@
+package com.champlain.carrental.repository;
+import com.champlain.carrental.domain.*;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;
+public interface RentalRepository extends JpaRepository<Rental,Long> {List<Rental> findByCarId(Long carId); List<Rental> findByCustomerId(Long customerId); List<Rental> findByStatus(RentalStatus status); boolean existsByCarId(Long carId); boolean existsByCustomerId(Long customerId); boolean existsByCarIdAndStatusAndIdNot(Long carId,RentalStatus status,Long id);}

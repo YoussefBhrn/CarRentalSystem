@@ -1,0 +1,1 @@
+package com.champlain.carrental.domain; public enum CarCategory {ECONOMY,COMPACT,SUV,LUXURY,VAN}

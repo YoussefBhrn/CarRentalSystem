@@ -1,0 +1,1 @@
+package com.champlain.carrental.domain; public enum CarStatus {AVAILABLE,RENTED,MAINTENANCE}

@@ -1,0 +1,3 @@
+package com.champlain.carrental.repository;
+import com.champlain.carrental.domain.*;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;
+public interface CustomerRepository extends JpaRepository<Customer,Long> {List<Customer> findByLastNameContainingIgnoreCase(String lastName); boolean existsByEmailAndIdNot(String email,Long id); boolean existsByDriverLicenseNumberAndIdNot(String number,Long id);}

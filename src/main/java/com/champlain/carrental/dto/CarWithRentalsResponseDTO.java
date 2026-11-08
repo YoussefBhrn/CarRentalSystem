@@ -1,0 +1,1 @@
+package com.champlain.carrental.dto;import java.util.List;public record CarWithRentalsResponseDTO(CarResponseDTO car,List<RentalResponseDTO> rentals) {}

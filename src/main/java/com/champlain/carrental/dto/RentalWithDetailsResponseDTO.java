@@ -1,0 +1,1 @@
+package com.champlain.carrental.dto;public record RentalWithDetailsResponseDTO(RentalResponseDTO rental,CarResponseDTO car,CustomerResponseDTO customer) {}

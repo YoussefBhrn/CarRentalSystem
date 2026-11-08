@@ -1,0 +1,225 @@
+{
+  "info": {
+    "name": "Car Rental System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "GET /api/cars",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/cars",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "cars"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/cars/11",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/cars/11",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "cars",
+            "11"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/cars/11/rentals",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/cars/11/rentals",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "cars",
+            "11",
+            "rentals"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/customers",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/customers",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "customers"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/customers/1/rentals",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/customers/1/rentals",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "customers",
+            "1",
+            "rentals"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/rentals",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/rentals",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "rentals"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/rentals/1/details",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/rentals/1/details",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "rentals",
+            "1",
+            "details"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/rentals",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/rentals",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "rentals"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"carId\": 11, \"customerId\": 11, \"startDate\": \"2030-01-10\", \"endDate\": \"2030-01-13\"}"
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/rentals/1/return",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/rentals/1/return",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "rentals",
+            "1",
+            "return"
+          ]
+        }
+      }
+    }
+  ]
+}

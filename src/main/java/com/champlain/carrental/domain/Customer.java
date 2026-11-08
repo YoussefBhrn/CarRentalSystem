@@ -6,4 +6,8 @@ import jakarta.persistence.*;
 @Column(nullable=false,unique=true) public String email;
 public String phone;
 @Column(nullable=false,unique=true) public String driverLicenseNumber;
-public Customer(){} }
+public Customer(){}
+    public Long getId() {
+        return id;
+    }
+}

@@ -16,10 +16,10 @@ Optional filters: `GET /api/cars?status=AVAILABLE&category=SUV`, `GET /api/custo
 
 ## Sample requests
 ```bash
-curl http://localhost:8080/api/cars
-curl http://localhost:8080/api/customers/1/rentals
-curl -X POST http://localhost:8080/api/rentals -H 'Content-Type: application/json' -d '{"carId":11,"customerId":11,"startDate":"2030-01-10","endDate":"2030-01-13"}'
-curl -X PATCH http://localhost:8080/api/rentals/1/return
+curl http://localhost:8081/api/cars
+curl http://localhost:8081/api/customers/1/rentals
+curl -X POST http://localhost:8081/api/rentals -H 'Content-Type: application/json' -d '{"carId":11,"customerId":11,"startDate":"2030-01-10","endDate":"2030-01-13"}'
+curl -X PATCH http://localhost:8081/api/rentals/1/return
 ```
 
 ## Business rules

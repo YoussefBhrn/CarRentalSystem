@@ -8,4 +8,9 @@ import jakarta.persistence.*;import java.math.BigDecimal;
 @Enumerated(EnumType.STRING) @Column(nullable=false) public CarCategory category;
 @Column(nullable=false,precision=10,scale=2) public BigDecimal dailyRate;
 @Enumerated(EnumType.STRING) @Column(nullable=false) public CarStatus status;
-public Car(){} }
+public Car(){}
+    public Long getId() {
+        return id;
+    }
+}
+
